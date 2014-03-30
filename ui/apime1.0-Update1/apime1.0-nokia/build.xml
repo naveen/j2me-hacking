@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="apime1.0-nokia" default="build" basedir=".">
+
+	<!-- Propiedades -->
+	<property name="project_name" value="${ant.project.name}"/>
+	<property name="wtk_home" value="d:/wtk21"/>
+	<property name="wtk_lib" value="${wtk_home}/lib/cldcapi10.jar;${wtk_home}/lib/midpapi10.jar"/>
+	<property name="nokia_lib" value="${wtk_home}/lib/ext/nokiaui.jar"/>
+
+	<!-- Inicializa -->
+	<target name="init">
+		<tstamp/>
+	</target>
+
+	<!-- Limpia -->
+	<target name="clean" depends="init">
+		<delete>
+			<fileset dir="bin" includes="*.jar"/>
+		</delete>
+		<delete dir="classes"/>
+		<delete dir="tmpclasses"/>
+	</target>
+
+	<!-- Compila/Preverifica -->
+	<target name="compile" depends="init">
+		<mkdir dir="tmpclasses"/>
+		<javac destdir="tmpclasses" srcdir="src" bootclasspath="${wtk_lib};${nokia_lib}" target="1.1"/>
+		<mkdir dir="classes"/>
+		<exec executable="${wtk_home}/bin/preverify">
+			<arg line="-classpath ${wtk_lib};${nokia_lib}"/>
+			<arg line="-d classes"/>
+			<arg line="tmpclasses"/>
+		</exec>
+	</target>
+
+	<!-- Empaqueta -->
+	<target name="package" depends="compile">
+		<jar jarfile="bin/${project_name}.jar">
+			<manifest>
+				<attribute name="Extension-Name" value="com.java4ever.apime"></attribute>
+				<attribute name="Specification-Title" value="Apime"></attribute>
+				<attribute name="Specification-Vendor" value="Java4Ever"></attribute>
+				<attribute name="Specification-Version" value="1.0"></attribute>
+				<attribute name="Implementation-Title" value="Apime"></attribute>
+				<attribute name="Implementation-Vendor" value="Java4Ever"></attribute>
+				<attribute name="Implementation-Vendor-Id" value="com.java4ever"></attribute>
+				<attribute name="Implementation-Version" value="1.0"></attribute>
+			</manifest>
+			<fileset dir="classes"/>
+		</jar>
+	</target>
+
+	<!-- Javadoc -->
+	<target name="javadoc">
+		<mkdir dir="docs/api"/>
+		<javadoc packagenames="com.java4ever.apime.*" sourcepath="src" destdir="docs/api" bootclasspath="${wtk_lib};${nokia_lib}" author="false" version="false" use="true" splitindex="true" windowtitle="Apime v1.0">
+			<doctitle>Apime v1.0 API Specification</doctitle>
+			<header><![CDATA[<b>Apime&nbsp;v1.0</b>]]></header>
+			<bottom><![CDATA[Copyright 2004 Java4Ever.com. All Rights Reserved.]]></bottom>
+		</javadoc>
+	</target>
+
+	<!-- build -->
+	<target name="build" depends="init,compile,package"/>
+
+</project>

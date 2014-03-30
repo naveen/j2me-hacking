@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Parser</title>
+<link rel="stylesheet" type="text/css" href="../resources/script.css" />
+<script language="JavaScript" src="../resources/style.js"></script>
+</head>
+<body class="body">
+<div class="content">
+<div class="text"><div class="textcontent">
+<input type="text" id="index" onfocus="initsearch('..')" onkeyup="search()" class="index" value="Index..."/>
+<h2>thinlet</h2>
+<h1>Class Parser</h1>
+<div id="tabbar"><a
+	href="#description">Description</a><a
+	href="#constructors">Constructors</a><a
+	href="#methods">Methods</a></div><div><div><a name="description"></a>
+<div class="classtree"><div>java.lang.Object<div class="classnode">org.xml.sax.helpers.DefaultHandler<div class="classnode">thinlet.Parser</div></div></div>
+</div><div><b>All Implemented Interfaces:</b> <acronym title="interface in org.xml.sax">EntityResolver</acronym>, <acronym title="interface in org.xml.sax">DTDHandler</acronym>, <acronym title="interface in org.xml.sax">ContentHandler</acronym>, <acronym title="interface in org.xml.sax">ErrorHandler</acronym></div>
+<div class="code"><div class="classcode"><i>public class</i> <b>Parser</b> <i>extends</i> <acronym title="class in org.xml.sax.helpers">DefaultHandler</acronym></div></div></div><div><a
+	name="constructors"></a><div class="item" onmouseover="showitem(this);" onmouseout="hideitem(this);"><a name="Parser(thinlet.Widget, java.lang.String)"></a>
+<div class="code"><i>public</i> <b>Parser</b>(<a href="Widget.html" title="class in thinlet">Widget</a> widget, <acronym title="class in java.lang">String</acronym> resource) <div class="detail"><i>throws</i> <acronym title="class in java.lang">Exception</acronym></div></div></div>
+</div><div><a
+	name="methods"></a><div class="item" onmouseover="showitem(this);" onmouseout="hideitem(this);"><a name="characters(char[], int, int)"></a>
+<div class="code"><i>public</i> <i>void</i> <b>characters</b>(<i>char</i>[] chars, <i>int</i> start, <i>int</i> length) <div class="detail"><i>throws</i> <acronym title="class in org.xml.sax">SAXException</acronym></div></div><table class="detail"><tr><th>Specified by:</th><td><code>characters</code> in interface <code><acronym title="interface in org.xml.sax">ContentHandler</acronym></code></td></tr>
+<tr><th>Overrides:</th><td><code>characters</code> in class <code><acronym title="class in org.xml.sax.helpers">DefaultHandler</acronym></code></td></tr>
+</table></div>
+<div class="item" onmouseover="showitem(this);" onmouseout="hideitem(this);"><a name="endElement(java.lang.String, java.lang.String, java.lang.String)"></a>
+<div class="code"><i>public</i> <i>void</i> <b>endElement</b>(<acronym title="class in java.lang">String</acronym> uri, <acronym title="class in java.lang">String</acronym> localname, <acronym title="class in java.lang">String</acronym> name) <div class="detail"><i>throws</i> <acronym title="class in org.xml.sax">SAXException</acronym></div></div><table class="detail"><tr><th>Specified by:</th><td><code>endElement</code> in interface <code><acronym title="interface in org.xml.sax">ContentHandler</acronym></code></td></tr>
+<tr><th>Overrides:</th><td><code>endElement</code> in class <code><acronym title="class in org.xml.sax.helpers">DefaultHandler</acronym></code></td></tr>
+</table></div>
+<div class="item" onmouseover="showitem(this);" onmouseout="hideitem(this);"><a name="startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes)"></a>
+<div class="code"><i>public</i> <i>void</i> <b>startElement</b>(<acronym title="class in java.lang">String</acronym> uri, <acronym title="class in java.lang">String</acronym> localname, <acronym title="class in java.lang">String</acronym> name, <acronym title="interface in org.xml.sax">Attributes</acronym> attributes) <div class="detail"><i>throws</i> <acronym title="class in org.xml.sax">SAXException</acronym></div></div><table class="detail"><tr><th>Specified by:</th><td><code>startElement</code> in interface <code><acronym title="interface in org.xml.sax">ContentHandler</acronym></code></td></tr>
+<tr><th>Overrides:</th><td><code>startElement</code> in class <code><acronym title="class in org.xml.sax.helpers">DefaultHandler</acronym></code></td></tr>
+</table></div>
+<fieldset><legend>Methods inherited from class <acronym title="class in org.xml.sax.helpers">DefaultHandler</acronym></legend><div class="infieldset">
+resolveEntity,
+notationDecl,
+unparsedEntityDecl,
+setDocumentLocator,
+startDocument,
+endDocument,
+startPrefixMapping,
+endPrefixMapping,
+fatalError,
+error,
+warning,
+ignorableWhitespace,
+processingInstruction,
+skippedEntity</div></fieldset>
+<fieldset><legend>Methods inherited from class <acronym title="class in java.lang">Object</acronym></legend><div class="infieldset">
+getClass,
+hashCode,
+equals,
+clone,
+toString,
+notify,
+notifyAll,
+wait,
+wait,
+wait,
+finalize</div></fieldset>
+</div></div>
+<script type="text/javascript">tabbed();</script></div></div>
+<div class="sidebar">
+<iframe src="package-frame.html" style="display: none;"></iframe>
+<div id="package" class="package">loading...</div>
+</div>
+<div style="clear: both;"></div>
+</div>
+</body>
+</html>

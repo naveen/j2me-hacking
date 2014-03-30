@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="39"
+   name=""
+   committed-date="2006-08-21T04:07:56.584331Z"
+   url="http://byblos.googlecode.com/svn/trunk/src/resources"
+   last-author="gavin.emploi"
+   kind="dir"
+   uuid="55214601-da19-0410-95b5-973ce13c9e12"
+   repos="http://byblos.googlecode.com/svn"
+   revision="42"/>
+<entry
+   committed-rev="39"
+   name="emoticon_evilgrin.png"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-08-21T04:07:56.584331Z"
+   checksum="1395f640b561f276ee1b36b487b38159"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:46.000000Z"/>
+<entry
+   committed-rev="39"
+   name="emoticon_grin.png"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-08-21T04:07:56.584331Z"
+   checksum="fc966a7f2aa62333e1d80cf7159e2bfa"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:46.000000Z"/>
+<entry
+   committed-rev="39"
+   name="emoticon_surprised.png"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-08-21T04:07:56.584331Z"
+   checksum="01035b5f2686924176d2b6f264f2aee3"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:46.000000Z"/>
+<entry
+   committed-rev="39"
+   name="emoticon_happy.png"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-08-21T04:07:56.584331Z"
+   checksum="dced0f02464c18d619759081dc735f8b"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:46.000000Z"/>
+<entry
+   committed-rev="39"
+   name="emoticon_tongue.png"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-08-21T04:07:56.584331Z"
+   checksum="7d967d056d658a22ea9c01a4cde9730f"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:46.000000Z"/>
+<entry
+   committed-rev="39"
+   name="emoticon_unhappy.png"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-08-21T04:07:56.584331Z"
+   checksum="6909d4df04b2264ba7eb4adf8a057691"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:46.000000Z"/>
+<entry
+   committed-rev="39"
+   name="emoticon_wink.png"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-08-21T04:07:56.584331Z"
+   checksum="4db7b8bf0aeb86ba7dd7a486493652ed"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:46.000000Z"/>
+<entry
+   committed-rev="39"
+   name="emoticon_smile.png"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-08-21T04:07:56.584331Z"
+   checksum="4cae06c3432e1dcf4dceb0b9e4dba9f1"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+<entry
+   committed-rev="39"
+   name="emoticon_waii.png"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-08-21T04:07:56.584331Z"
+   checksum="ed797f9928cb771593ad3706bcf5a173"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+</wc-entries>

@@ -1,0 +1,8 @@
+MIDlet-1: apime1.0-nokia, ,
+MIDlet-Jar-Size: 71832
+MIDlet-Jar-URL: apime1.0-nokia.jar
+MIDlet-Name: apime1.0-nokia
+MIDlet-Vendor: Java4Ever
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-1.0

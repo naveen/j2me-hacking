@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="20"
+   name=""
+   committed-date="2006-08-02T05:25:52.205303Z"
+   url="http://byblos.googlecode.com/svn/trunk/dist"
+   last-author="gavin.emploi"
+   kind="dir"
+   uuid="55214601-da19-0410-95b5-973ce13c9e12"
+   repos="http://byblos.googlecode.com/svn"
+   revision="42"/>
+<entry
+   committed-rev="20"
+   name="list.jar"
+   text-time="2007-09-04T15:35:45.000000Z"
+   committed-date="2006-08-02T05:25:52.205303Z"
+   checksum="9439d08514ef955583cf66ec2354aecd"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:45.000000Z"/>
+<entry
+   committed-rev="20"
+   name="list.jad"
+   text-time="2007-09-04T15:35:45.000000Z"
+   committed-date="2006-08-02T05:25:52.205303Z"
+   checksum="c835840305ffa31485952c21e19148ec"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:45.000000Z"/>
+</wc-entries>

@@ -1,0 +1,4 @@
+standard.png;Standard set
+standard2x.png;Standard set scaled by 2
+standard3x.png;Standard set scaled by 3
+standard4x.png;Standard set scaled by 4

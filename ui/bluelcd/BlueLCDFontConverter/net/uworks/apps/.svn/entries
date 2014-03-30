@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="6"
+   name=""
+   committed-date="2006-08-05T00:24:35.972159Z"
+   url="http://bluelcd.googlecode.com/svn/trunk/BlueLCDFontConverter/net/uworks/apps"
+   last-author="peprio"
+   kind="dir"
+   uuid="5d666fbc-391a-0410-a214-2303235c0b0f"
+   repos="http://bluelcd.googlecode.com/svn"
+   revision="6"/>
+<entry
+   name="bluelcdfontconverter"
+   kind="dir"/>
+</wc-entries>

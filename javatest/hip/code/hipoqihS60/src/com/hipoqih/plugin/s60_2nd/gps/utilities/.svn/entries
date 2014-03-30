@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="68"
+   name=""
+   committed-date="2007-06-14T10:38:52.330686Z"
+   url="http://hipoqih.googlecode.com/svn/trunk/hipoqihS60/src/com/hipoqih/plugin/s60_2nd/gps/utilities"
+   last-author="xcanvic"
+   kind="dir"
+   uuid="d01ceb20-942c-0410-b683-cd95dc0ac709"
+   repos="http://hipoqih.googlecode.com/svn"
+   revision="97"/>
+<entry
+   committed-rev="68"
+   name="Utilities.class"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="4b24c5f2131a359c6a31eb2075870aa1"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:28.000000Z"/>
+<entry
+   committed-rev="68"
+   name="LambertConformalConicProjection.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="0e1ee7b3cc2b40d07d75a1db6ec40b39"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:28.000000Z"/>
+<entry
+   committed-rev="68"
+   name="CoordinatesFormat.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="ad4ada0d8fe10737e733152e920b8375"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:28.000000Z"/>
+<entry
+   committed-rev="68"
+   name="CH1903.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="38b3e987dfaec631206acd7eae21a2f5"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:28.000000Z"/>
+<entry
+   committed-rev="68"
+   name="Float11.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="9977cba0ce1b321532900f0d0e9abe4e"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:29.000000Z"/>
+<entry
+   committed-rev="68"
+   name="CH1903.class"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="2a4618084d1a0f532056a71c9bed9c14"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:29.000000Z"/>
+<entry
+   committed-rev="68"
+   name="Float11.class"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="86ed08122dccfebb9a82d4aa9835ec88"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:29.000000Z"/>
+<entry
+   committed-rev="68"
+   name="Utilities.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="0f76eb8726b970c1f7c16c6346e50027"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:29.000000Z"/>
+<entry
+   committed-rev="68"
+   name="LambertConformalConiqueProjection.class"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="49de2c7f130be0c3e3f2fa462d21a536"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:29.000000Z"/>
+<entry
+   committed-rev="68"
+   name="package.html"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="681270e1eee990cb4a4d9a15631f7467"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:29.000000Z"/>
+</wc-entries>

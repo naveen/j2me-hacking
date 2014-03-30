@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="80"
+   name=""
+   committed-date="2007-07-13T17:04:28.655874Z"
+   url="http://hipoqih.googlecode.com/svn/trunk/hipoqihS60/res"
+   last-author="xcanvic"
+   kind="dir"
+   uuid="d01ceb20-942c-0410-b683-cd95dc0ac709"
+   repos="http://hipoqih.googlecode.com/svn"
+   prop-time="2007-08-22T22:13:30.000000Z"
+   revision="97"/>
+<entry
+   committed-rev="63"
+   name="hipoqihSplash.PNG"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-06-12T10:00:37.220862Z"
+   checksum="698b7ca8e89feba2dee71396168dd493"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:30.000000Z"/>
+<entry
+   committed-rev="63"
+   name="a.png"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-06-12T10:00:37.220862Z"
+   checksum="30a5250ce1161a4c5036e0e7d865df99"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:30.000000Z"/>
+<entry
+   committed-rev="63"
+   name="hipoqih.png"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-06-12T10:00:37.220862Z"
+   checksum="1fd99ea221f14b92a65caa586f32c077"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:30.000000Z"/>
+<entry
+   committed-rev="63"
+   name="off.bmp"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-06-12T10:00:37.220862Z"
+   checksum="8631364f267f3102ddd71e27c142729c"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:30.000000Z"/>
+<entry
+   committed-rev="63"
+   name="on.bmp"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-06-12T10:00:37.220862Z"
+   checksum="bca74c436c341aa71d2a5e673c68a14e"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:30.000000Z"/>
+<entry
+   committed-rev="63"
+   name="hipoqihIcon.png"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-06-12T10:00:37.220862Z"
+   checksum="d187973fa19408d2a8e6a2796db57f0e"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:30.000000Z"/>
+</wc-entries>

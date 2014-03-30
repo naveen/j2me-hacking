@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!--
+
+	Test Build Script for J2ME components
+
+	Copyright (c) 2006-2007 Mary Jane Soft - Marlon J. Manrique
+	
+	http://mjs.darkgreenmedia.com
+	http://marlonj.darkgreenmedia.com
+
+	This library is free software; you can redistribute it and/or
+	modify it under the terms of the GNU Lesser General Public
+	License as published by the Free Software Foundation; either
+	version 2.1 of the License, or (at your option) any later version.
+
+	This library is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+	Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General
+	Public License along with this library; if not, write to the
+	Free Software Foundation, Inc., 59 Temple Place, Suite 330,
+	Boston, MA  02111-1307  USA
+
+	Use build.properties file to set options for this library.
+
+	$Id: build.xml 226 2007-06-04 19:01:01Z marlonj $
+	
+-->
+
+<!-- Build Script -->
+
+<project name="Tests" default="build" basedir=".">
+
+	<!-- use antenna to create J2ME library -->
+	<taskdef resource="antenna.properties" />
+
+	<!-- load library properties -->
+	<property file="../build.properties"/>
+
+	<!-- set Wireless Toolkit home -->
+	<property name="wtk.home" value="${wtk_home}" />
+
+	<!-- set especial J2ME properties  -->
+	<property name="wtk.midp.version" value="2.0" />
+	<property name="wtk.cldc.version" value="1.1" />
+
+	<!-- Build Tests -->
+	<target name="build">
+	
+		<mkdir dir="classes" />
+
+		<!-- create jad file, the package needs the jad file -->
+		<wtkjad 	jadfile="${product_file}test.jad" 
+					jarfile="${product_file}test.jar" 
+					name="${product_name} Test" 
+					vendor="${product_vendor}" 
+					version="${product_version}">
+					<midlet name="${product_name} Test" class="mjs.thunder.service.tests.midp.TestsMIDlet"/>
+		</wtkjad>		
+
+		<!-- Compile the sources -->
+		<wtkbuild srcdir="src" destdir="classes" preverify="false">
+			<classpath>
+				<pathelement location="../bin/${product_file}.jar" />
+				<fileset dir="lib">
+        			<include name="**/*.jar"/>
+				</fileset>
+			</classpath>
+		</wtkbuild>			
+
+		<!-- Create the library file -->
+		<wtkpackage jarfile="${product_file}test.jar" jadfile="${product_file}test.jad" 
+			obfuscate="false" preverify="true" >
+
+			<libclasspath>
+				<pathelement location="../bin/${product_file}.jar" />
+				<fileset dir="lib">
+        			<include name="**/*.jar"/>
+				</fileset>
+			</libclasspath>
+			
+			<fileset dir="classes" />
+			<fileset dir="res" />			
+
+		</wtkpackage>
+
+	</target>
+
+	<!-- Run Test -->
+	<target name="run" depends="build" >
+		<wtkrun jadfile="${product_file}test.jad" />
+	</target>
+
+	<!-- Remove all created files to clean the build process -->
+	<target name="clean">
+		<delete failonerror="false" dir="classes" />
+		<delete failonerror="false" file="${product_file}test.jad" />
+		<delete failonerror="false" file="${product_file}test.jar" />
+	</target>
+	
+</project>

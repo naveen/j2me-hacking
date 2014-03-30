@@ -1,0 +1,8 @@
+MIDlet-1: ReadMe, icon.png, gr.bluevibe.fire.test.ReadMe
+MIDlet-Jar-Size: 57756
+MIDlet-Jar-URL: FireMe.jar
+MIDlet-Name: FireMe
+MIDlet-Vendor: Bluebird
+MIDlet-Version: 1.1
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0

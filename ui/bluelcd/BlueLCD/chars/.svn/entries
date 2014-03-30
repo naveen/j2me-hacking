@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="3"
+   name=""
+   committed-date="2006-08-05T00:16:14.200994Z"
+   url="http://bluelcd.googlecode.com/svn/trunk/BlueLCD/chars"
+   last-author="peprio"
+   kind="dir"
+   uuid="5d666fbc-391a-0410-a214-2303235c0b0f"
+   repos="http://bluelcd.googlecode.com/svn"
+   revision="6"/>
+<entry
+   committed-rev="2"
+   name="standard4x.png"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="b91430205a61ca3c1b92566f86b2f3eb"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:38.000000Z"/>
+<entry
+   committed-rev="2"
+   name="standard.png"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="69d566f1fc9083d7df397d8e231eb896"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:39.000000Z"/>
+<entry
+   committed-rev="2"
+   name="standard2x.png"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="1fdd4306c9336091cc252eba628db3be"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:39.000000Z"/>
+<entry
+   committed-rev="2"
+   name="chars.txt"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="c26f2b7ab01169d2772cbaadf9a2218c"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:39.000000Z"/>
+<entry
+   committed-rev="2"
+   name="standard3x.png"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="eb1a01c5512a3e268f3f4ce1de96cced"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:39.000000Z"/>
+</wc-entries>

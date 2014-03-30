@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="7"
+   url="https://fire-j2me.svn.sourceforge.net/svnroot/fire-j2me/fire-j2me/doc"
+   last-author="padeler"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="dir"
+   name=""
+   committed-rev="7"/>
+<entry
+   checksum="8f6b4d4dff4497b650082a13827cea53"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="allclasses-frame.html"
+   committed-rev="7"/>
+<entry
+   checksum="6acf5bb099ac335001917adea661e488"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="allclasses-noframe.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="0de9ef277647e14d060dac8a59b87aae"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="constant-values.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="d357c42592f7c0f15483e1552577a255"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="deprecated-list.html"
+   committed-rev="7"/>
+<entry
+   kind="dir"
+   name="gr"/>
+<entry
+   checksum="950121b0750129657e4f3e92cb97454f"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:18.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="help-doc.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   name="index-files"
+   kind="dir"/>
+<entry
+   checksum="8a77f4a112660549dd90f246964c790c"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="index.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="326cf1561dc95a4f67986cd9e4a6a775"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="overview-frame.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="db9072180e4dc4ca720d9d371a314ede"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="overview-summary.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="86d53e590b39519fcb240a07bf97cd22"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="overview-tree.html"
+   committed-rev="7"/>
+<entry
+   checksum="71347f104cee55240e11ec48455971a0"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:18.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="package-list"
+   committed-rev="7"/>
+<entry
+   checksum="9c73b241076da239458c9df635ff862f"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="packages.html"
+   committed-rev="7"/>
+<entry
+   kind="dir"
+   name="resources"/>
+<entry
+   checksum="3a954e53e9b5e294fa2f3b2c87c45f47"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:18.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="serialized-form.html"
+   committed-rev="7"/>
+<entry
+   checksum="8cc88314fce0cc52e57f9ccb2cb8436e"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:18.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="stylesheet.css"
+   kind="file"
+   committed-rev="7"/>
+</wc-entries>

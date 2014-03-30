@@ -1,0 +1,2075 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="release_notes_filelist.xml">
+<link rel=Edit-Time-Data href="release_notes_editdata.mso">
+<link rel=OLE-Object-Data href="release_notes_oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Release Notes for MIDP: Location API Example - Tourist Route</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="Street"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="address"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Nokia</o:Author>
+  <o:LastAuthor>Mervi Sivula</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:LastPrinted>1997-09-02T15:43:00Z</o:LastPrinted>
+  <o:Created>2006-03-21T10:39:00Z</o:Created>
+  <o:LastSaved>2006-03-21T10:39:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>815</o:Words>
+  <o:Characters>4781</o:Characters>
+  <o:Company>Nokia Oyj</o:Company>
+  <o:Lines>99</o:Lines>
+  <o:Paragraphs>42</o:Paragraphs>
+  <o:CharactersWithSpaces>5554</o:CharactersWithSpaces>
+  <o:Version>11.6408</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:DoNotOrganizeInFolder/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PrintFractionalCharacterWidth/>
+  <w:HideSpellingErrors/>
+  <w:HyphenationZone>17</w:HyphenationZone>
+  <w:DoNotHyphenateCaps/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotShadeFormData/>
+  <w:Compatibility>
+   <w:PrintColBlack/>
+   <w:ShowBreaksInFrames/>
+   <w:SuppressSpBfAfterPgBrk/>
+   <w:SwapBordersFacingPages/>
+   <w:ConvMailMergeEsc/>
+   <w:WW6BorderRules/>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:NoSpaceRaiseLower/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseWord97LineBreakingRules/>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{mso-style-next:"11 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l10 level1 lfo1;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	text-transform:uppercase;
+	mso-font-kerning:0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-next:"11 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l10 level2 lfo1;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+h3
+	{mso-style-next:"11 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l10 level3 lfo1;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:normal;}
+h4
+	{mso-style-parent:"Heading 3";
+	mso-style-next:"11 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-list:l10 level4 lfo1;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:normal;}
+h5
+	{mso-style-parent:"Heading 3";
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	mso-list:l10 level5 lfo1;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:normal;}
+h6
+	{mso-style-parent:"Heading 3";
+	mso-style-next:"11 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	mso-list:l10 level6 lfo1;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-parent:"Heading 3";
+	mso-style-next:"11 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	mso-list:l10 level7 lfo1;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-parent:"Heading 3";
+	mso-style-next:"11 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	mso-list:l10 level8 lfo1;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-parent:"Heading 3";
+	mso-style-next:"11 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:9;
+	mso-list:l10 level9 lfo1;
+	tab-stops:list 18.0pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex1, li.MsoIndex1, div.MsoIndex1
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:11.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-11.0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex2, li.MsoIndex2, div.MsoIndex2
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:22.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-11.0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex3, li.MsoIndex3, div.MsoIndex3
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:33.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-11.0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex4, li.MsoIndex4, div.MsoIndex4
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:44.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-11.0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex5, li.MsoIndex5, div.MsoIndex5
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:55.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-11.0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex6, li.MsoIndex6, div.MsoIndex6
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:66.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-11.0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex7, li.MsoIndex7, div.MsoIndex7
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:77.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-11.0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex8, li.MsoIndex8, div.MsoIndex8
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:88.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-11.0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndex9, li.MsoIndex9, div.MsoIndex9
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:99.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-11.0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 496.05pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:11.9pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 496.05pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:24.1pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 496.05pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-noshow:yes;
+	mso-style-parent:"TOC 3";
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:24.1pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 496.05pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:44.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 496.05pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:55.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 496.05pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:66.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 496.05pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:77.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 496.05pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:88.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 496.05pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoNormalIndent, li.MsoNormalIndent, div.MsoNormalIndent
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:64.9pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-noshow:yes;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:7.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoIndexHeading, li.MsoIndexHeading, div.MsoIndexHeading
+	{mso-style-noshow:yes;
+	mso-style-next:"Index 1";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoTof, li.MsoTof, div.MsoTof
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoEnvelopeAddress, li.MsoEnvelopeAddress, div.MsoEnvelopeAddress
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:144.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-element:frame;
+	mso-element-frame-width:396.0pt;
+	mso-element-frame-height:99.0pt;
+	mso-element-frame-hspace:9.0pt;
+	mso-element-wrap:auto;
+	mso-element-anchor-horizontal:page;
+	mso-element-left:center;
+	mso-element-top:bottom;
+	mso-height-rule:exactly;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoEnvelopeReturn, li.MsoEnvelopeReturn, div.MsoEnvelopeReturn
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+span.MsoCommentReference
+	{mso-style-noshow:yes;
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{mso-style-noshow:yes;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoToa, li.MsoToa, div.MsoToa
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:11.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-11.0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoMacroText, li.MsoMacroText, div.MsoMacroText
+	{mso-style-noshow:yes;
+	mso-style-parent:"";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:24.0pt 48.0pt 72.0pt 96.0pt 120.0pt 144.0pt 168.0pt 192.0pt 216.0pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToaHeading, li.MsoToaHeading, div.MsoToaHeading
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoList, li.MsoList, div.MsoList
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:14.15pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l9 level1 lfo2;
+	tab-stops:list 18.0pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListNumber, li.MsoListNumber, div.MsoListNumber
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l8 level1 lfo7;
+	tab-stops:list 18.0pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:28.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoList3, li.MsoList3, div.MsoList3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:42.45pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoList4, li.MsoList4, div.MsoList4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:56.6pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoList5, li.MsoList5, div.MsoList5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:70.75pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListBullet2, li.MsoListBullet2, div.MsoListBullet2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:32.15pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l7 level1 lfo3;
+	tab-stops:list 32.15pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListBullet3, li.MsoListBullet3, div.MsoListBullet3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:46.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l6 level1 lfo4;
+	tab-stops:list 46.3pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListBullet4, li.MsoListBullet4, div.MsoListBullet4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:60.45pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l5 level1 lfo5;
+	tab-stops:list 60.45pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListBullet5, li.MsoListBullet5, div.MsoListBullet5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:74.6pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l4 level1 lfo6;
+	tab-stops:list 74.6pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListNumber2, li.MsoListNumber2, div.MsoListNumber2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:32.15pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l3 level1 lfo8;
+	tab-stops:list 32.15pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListNumber3, li.MsoListNumber3, div.MsoListNumber3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:46.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l2 level1 lfo9;
+	tab-stops:list 46.3pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListNumber4, li.MsoListNumber4, div.MsoListNumber4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:60.45pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l1 level1 lfo10;
+	tab-stops:list 60.45pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListNumber5, li.MsoListNumber5, div.MsoListNumber5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:74.6pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo11;
+	tab-stops:list 74.6pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:14.0pt;
+	font-weight:bold;}
+p.MsoClosing, li.MsoClosing, div.MsoClosing
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:212.6pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoSignature, li.MsoSignature, div.MsoSignature
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:212.6pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListContinue, li.MsoListContinue, div.MsoListContinue
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListContinue2, li.MsoListContinue2, div.MsoListContinue2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:28.3pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListContinue3, li.MsoListContinue3, div.MsoListContinue3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:42.45pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListContinue4, li.MsoListContinue4, div.MsoListContinue4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:56.6pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListContinue5, li.MsoListContinue5, div.MsoListContinue5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:70.75pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoMessageHeader, li.MsoMessageHeader, div.MsoMessageHeader
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:56.7pt;
+	margin-bottom:.0001pt;
+	text-indent:-56.7pt;
+	mso-pagination:widow-orphan;
+	background:#CCCCCC;
+	mso-shading:windowtext;
+	mso-pattern:gray-20 auto;
+	border:none;
+	mso-border-alt:solid windowtext .75pt;
+	padding:0pt;
+	mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoSalutation, li.MsoSalutation, div.MsoSalutation
+	{mso-style-next:Normal;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoDate, li.MsoDate, div.MsoDate
+	{mso-style-next:Normal;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextFirstIndent, li.MsoBodyTextFirstIndent, div.MsoBodyTextFirstIndent
+	{mso-style-parent:"Body Text";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	text-indent:10.5pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextFirstIndent2, li.MsoBodyTextFirstIndent2, div.MsoBodyTextFirstIndent2
+	{mso-style-parent:"Body Text Indent";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	text-indent:10.5pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoNoteHeading, li.MsoNoteHeading, div.MsoNoteHeading
+	{mso-style-next:Normal;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0pt;
+	margin-right:72.0pt;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:#003399;
+	mso-text-animation:none;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAutoSig, li.MsoAutoSig, div.MsoAutoSig
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+address
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	font-style:italic;}
+pre
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:64.9pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-noshow:yes;
+	mso-style-parent:"Comment Text";
+	mso-style-next:"Comment Text";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+p.00BodyText, li.00BodyText, div.00BodyText
+	{mso-style-name:"00 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.02BodyText, li.02BodyText, div.02BodyText
+	{mso-style-name:"02 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:129.85pt;
+	text-indent:-129.85pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.01BodyText, li.01BodyText, div.01BodyText
+	{mso-style-name:"01 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:64.9pt;
+	text-indent:-64.9pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.11BodyText, li.11BodyText, div.11BodyText
+	{mso-style-name:"11 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:64.9pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Bulletedo2, li.Bulletedo2, div.Bulletedo2
+	{mso-style-name:"Bulleted o 2";
+	mso-style-parent:"22 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:147.7pt;
+	text-indent:-17.85pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.22BodyText, li.22BodyText, div.22BodyText
+	{mso-style-name:"22 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:129.85pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.12BodyText, li.12BodyText, div.12BodyText
+	{mso-style-name:"12 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:129.8pt;
+	text-indent:-64.9pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.23BodyText, li.23BodyText, div.23BodyText
+	{mso-style-name:"23 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:194.75pt;
+	text-indent:-64.9pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.33BodyText, li.33BodyText, div.33BodyText
+	{mso-style-name:"33 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:194.75pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Bulletedo1, li.Bulletedo1, div.Bulletedo1
+	{mso-style-name:"Bulleted o 1";
+	mso-style-parent:"11 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:82.75pt;
+	text-indent:-17.85pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Bulleted-1, li.Bulleted-1, div.Bulleted-1
+	{mso-style-name:"Bulleted - 1";
+	mso-style-parent:"Bulleted o 1";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:82.75pt;
+	text-indent:-17.85pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.NumberedList0, li.NumberedList0, div.NumberedList0
+	{mso-style-name:"Numbered List 0";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:64.9pt;
+	text-indent:-64.9pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.NumberedList1, li.NumberedList1, div.NumberedList1
+	{mso-style-name:"Numbered List 1";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:82.75pt;
+	text-indent:-17.85pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.NumberedList2, li.NumberedList2, div.NumberedList2
+	{mso-style-name:"Numbered List 2";
+	mso-style-parent:"Numbered List 1";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:147.7pt;
+	text-indent:-17.85pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Bulleted-2, li.Bulleted-2, div.Bulleted-2
+	{mso-style-name:"Bulleted - 2";
+	mso-style-parent:"Bulleted o 2";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:147.7pt;
+	text-indent:-17.85pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.TitleText, li.TitleText, div.TitleText
+	{mso-style-name:"Title Text";
+	mso-style-parent:"00 BodyText";
+	mso-style-next:"11 BodyText";
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.DocumentTitle, li.DocumentTitle, div.DocumentTitle
+	{mso-style-name:"Document Title";
+	margin-top:140.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("release_notes_header.htm") fs;
+	mso-footnote-continuation-separator:url("release_notes_header.htm") fcs;
+	mso-endnote-separator:url("release_notes_header.htm") es;
+	mso-endnote-continuation-separator:url("release_notes_header.htm") ecs;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:113.4pt 28.35pt 42.55pt 56.7pt;
+	mso-header-margin:28.35pt;
+	mso-footer-margin:28.35pt;
+	mso-header:url("release_notes_header.htm") h1;
+	mso-paper-source:7;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-132;
+	mso-list-type:simple;
+	mso-list-template-ids:1408517096;}
+@list l0:level1
+	{mso-level-style-link:"List Number 5";
+	mso-level-tab-stop:74.6pt;
+	mso-level-number-position:left;
+	margin-left:74.6pt;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:-131;
+	mso-list-type:simple;
+	mso-list-template-ids:-650104946;}
+@list l1:level1
+	{mso-level-style-link:"List Number 4";
+	mso-level-tab-stop:60.45pt;
+	mso-level-number-position:left;
+	margin-left:60.45pt;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:-130;
+	mso-list-type:simple;
+	mso-list-template-ids:453384368;}
+@list l2:level1
+	{mso-level-style-link:"List Number 3";
+	mso-level-tab-stop:46.3pt;
+	mso-level-number-position:left;
+	margin-left:46.3pt;
+	text-indent:-18.0pt;}
+@list l3
+	{mso-list-id:-129;
+	mso-list-type:simple;
+	mso-list-template-ids:-306545618;}
+@list l3:level1
+	{mso-level-style-link:"List Number 2";
+	mso-level-tab-stop:32.15pt;
+	mso-level-number-position:left;
+	margin-left:32.15pt;
+	text-indent:-18.0pt;}
+@list l4
+	{mso-list-id:-128;
+	mso-list-type:simple;
+	mso-list-template-ids:1231059794;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet 5";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:74.6pt;
+	mso-level-number-position:left;
+	margin-left:74.6pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:-127;
+	mso-list-type:simple;
+	mso-list-template-ids:-2072859130;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet 4";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:60.45pt;
+	mso-level-number-position:left;
+	margin-left:60.45pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:-126;
+	mso-list-type:simple;
+	mso-list-template-ids:1071402706;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet 3";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:46.3pt;
+	mso-level-number-position:left;
+	margin-left:46.3pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:-125;
+	mso-list-type:simple;
+	mso-list-template-ids:847443354;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet 2";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:32.15pt;
+	mso-level-number-position:left;
+	margin-left:32.15pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:-120;
+	mso-list-type:simple;
+	mso-list-template-ids:-1646342544;}
+@list l8:level1
+	{mso-level-style-link:"List Number";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l9
+	{mso-list-id:-119;
+	mso-list-type:simple;
+	mso-list-template-ids:-387794956;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:-5;
+	mso-list-template-ids:-1;}
+@list l10:level1
+	{mso-level-style-link:"Heading 1";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0pt;
+	mso-level-legacy-space:5.65pt;
+	margin-left:0pt;
+	text-indent:0pt;}
+@list l10:level2
+	{mso-level-style-link:"Heading 2";
+	mso-level-text:"%1\.%2";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0pt;
+	mso-level-legacy-space:5.65pt;
+	margin-left:0pt;
+	text-indent:0pt;}
+@list l10:level3
+	{mso-level-style-link:"Heading 3";
+	mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0pt;
+	mso-level-legacy-space:5.65pt;
+	margin-left:0pt;
+	text-indent:0pt;}
+@list l10:level4
+	{mso-level-style-link:"Heading 4";
+	mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0pt;
+	mso-level-legacy-space:5.65pt;
+	margin-left:0pt;
+	text-indent:0pt;}
+@list l10:level5
+	{mso-level-style-link:"Heading 5";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0pt;
+	mso-level-legacy-space:5.65pt;
+	margin-left:0pt;
+	text-indent:0pt;}
+@list l10:level6
+	{mso-level-style-link:"Heading 6";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0pt;
+	mso-level-legacy-space:5.65pt;
+	margin-left:0pt;
+	text-indent:0pt;}
+@list l10:level7
+	{mso-level-style-link:"Heading 7";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0pt;
+	mso-level-legacy-space:5.65pt;
+	margin-left:0pt;
+	text-indent:0pt;}
+@list l10:level8
+	{mso-level-style-link:"Heading 8";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0pt;
+	mso-level-legacy-space:5.65pt;
+	margin-left:0pt;
+	text-indent:0pt;}
+@list l10:level9
+	{mso-level-style-link:"Heading 9";
+	mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0pt;
+	mso-level-legacy-space:5.65pt;
+	margin-left:0pt;
+	text-indent:0pt;}
+ol
+	{margin-bottom:0pt;}
+ul
+	{margin-bottom:0pt;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0pt 5.4pt 0pt 5.4pt;
+	mso-para-margin:0pt;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link="#003399" vlink=purple style='tab-interval:64.9pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal>MIDP: Location API Example - <st1:Street w:st="on"><st1:address
+ w:st="on">Tourist Route</st1:address></st1:Street></p>
+
+<p class=MsoNormal>---------------------------</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>This MIDP application demonstrates the usage of the Location
+API by showing</p>
+
+<p class=MsoNormal>the current device coordinates. The MIDlet also shows how to
+store the current</p>
+
+<p class=MsoNormal>coordinates associated with location information to the
+device’s landmark store.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The Location API is supported from S60 3rd Edition and
+Series 40 3rd Edition</p>
+
+<p class=MsoNormal>(some devices) onwards.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>--------------------------------------------------------------------------------</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>PREREQUISITES</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>MIDP 2.0 basics</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>--------------------------------------------------------------------------------</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>IMPORTANT FILES/CLASSES</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>classes:</p>
+
+<p class=MsoNormal>src\com\nokia\example\location\tourist\TouristMIDlet.java</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>src\com\nokia\example\location\tourist\model\ConfigurationProvider.java</p>
+
+<p class=MsoNormal>src\com\nokia\example\location\tourist\model\ControlPoints.java</p>
+
+<p class=MsoNormal>src\com\nokia\example\location\tourist\model\ProviderStatusListener.java</p>
+
+<p class=MsoNormal>src\com\nokia\example\location\tourist\model\TouristData.java</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>src\com\nokia\example\location\tourist\util\CompassUI.java</p>
+
+<p class=MsoNormal>src\com\nokia\example\location\tourist\util\LandmarkEditorUI.java</p>
+
+<p class=MsoNormal>src\com\nokia\example\location\tourist\util\MessageUI.java</p>
+
+<p class=MsoNormal>src\com\nokia\example\location\tourist\util\PitchRollUI.java</p>
+
+<p class=MsoNormal>src\com\nokia\example\location\tourist\util\ProviderQueryUI.java</p>
+
+<p class=MsoNormal>src\com\nokia\example\location\tourist\util\TouristUI.java</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>ANT build script:</p>
+
+<p class=MsoNormal>build.xml</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>--------------------------------------------------------------------------------</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>KNOWN ISSUES:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>- The MIDlet contains features such as compass (orientation)
+that are not currently </p>
+
+<p class=MsoNormal>supported by Nokia devices. Such features are not visible in
+the MIDlet at </p>
+
+<p class=MsoNormal>run time unless a device supports them.</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span></p>
+
+<p class=MsoNormal>--------------------------------------------------------------------------------</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>RUNNING THE EXAMPLE</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>There are three main views in the application:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>&quot;Route View&quot; - The application will show this
+after a successful startup.</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>From this
+view the user can monitor the current device coordinates</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>and switch
+to the Landmark Editor view.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>&quot;Landmark Editor&quot; - This view enables the user to
+store the current coordinates</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>associated
+with user-defined location information to the device’s</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>landmark
+store. From this view the user can switch back to the Route View</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>or to the Landmark
+List.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>&quot;Landmark List&quot; - This view lists all landmarks
+stored with this application.</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>The user can
+either remove the selected landmark or update its</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>           
+</span>information. The update command will switch the user to the Landmark
+Editor view.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>In addition, the MIDlet contains two views (&quot;Compass
+View&quot; and &quot;Pitch and Roll View&quot;)</p>
+
+<p class=MsoNormal>that are shown only if the device or emulator supports
+orientation.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The following are quick instructions on how to run the
+example from command line</p>
+
+<p class=MsoNormal>and from Eclipse IDE:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>1) Running the MIDlet from command line: </p>
+
+<p class=MsoNormal>----------------------------------------</p>
+
+<p class=MsoNormal>The MIDlet can be run in Prototype SDK 3.0 / 4.0 from the
+command line:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>[Prototype SDK install path]\bin\emulator.exe
+-Xdescriptor:[workspace path]\TouristRoute\TouristRoute.jad</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>2) Running the MIDlet from Eclipse IDE:</p>
+
+<p class=MsoNormal>--------------------------------------</p>
+
+<p class=MsoNormal>- Import the TouristRoute project into your Eclipse
+workspace.</p>
+
+<p class=MsoNormal>- Open the TouristRoute project in the Package Explorer.</p>
+
+<p class=MsoNormal>- Create a run configuration:</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>                      </span>1.
+Right-click TouristRoute.jad</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>                      </span>2.
+Select &quot;Run As | Run...&quot;</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>                      </span>3.
+Select Nokia SDK Plug-in from the Configurations and click the new button.</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>                      </span>4.
+Select the SDK (e.g., Prototype_4_0_S60_MIDP_Emulator)</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>                      </span>5.
+Click the run button. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>On the next runs you can reuse the existing run
+configuration. For more detailed</p>
+
+<p class=MsoNormal>instructions, see the SDK's User's Guide.</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>     </span></p>
+
+<p class=MsoNormal>--------------------------------------------------------------------------------</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>BUILD &amp; INSTALLATION INSTRUCTIONS</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Configuring Eclipse and Carbide.j 1.0</p>
+
+<p class=MsoNormal>-------------------------------------</p>
+
+<p class=MsoNormal>The preferred method is to use Eclipse with Carbide.j 1.0
+installed</p>
+
+<p class=MsoNormal>as a plug-in. Choose &quot;File | Import | Existing Project
+into Workspace&quot; from</p>
+
+<p class=MsoNormal>the top menu of Eclipse and browse to the TouristRoute folder.
+This will add</p>
+
+<p class=MsoNormal>the project to your Workspace.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>You may need to configure the Build Path in &quot;Project |
+Properties |</p>
+
+<p class=MsoNormal>Java Build Path | Libraries&quot; to point to the right
+location of Nokia </p>
+
+<p class=MsoNormal>Prototype SDK 4.0. In addition, ensure that Carbide.j 1.0 is
+configured</p>
+
+<p class=MsoNormal>to use Prototype SDK 3.0 / 4.0 from the &quot;Emulators |
+Configure Emulator...&quot; </p>
+
+<p class=MsoNormal>menu.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Compiling using Ant</p>
+
+<p class=MsoNormal>-------------------</p>
+
+<p class=MsoNormal>A build.xml file is included that uses the ANT tasks
+included</p>
+
+<p class=MsoNormal>in Carbide.j 1.0. It may be necessary to modify the location
+of </p>
+
+<p class=MsoNormal>Carbide.j and the desired emulator/device from the build.xml
+file.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>For instructions on how to configure build.xml, see Carbide.j
+1.0 </p>
+
+<p class=MsoNormal>User's Guide and Apache Ant 1.6.5 Manual.</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span></p>
+
+<p class=MsoNormal>--------------------------------------------------------------------------------</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>COMPATIBILITY</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>   </span></p>
+
+<p class=MsoNormal>S60 3rd Edition</p>
+
+<p class=MsoNormal>Series 40 3rd Edition (some devices)</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><a name="OLE_LINK14"></a><a name="OLE_LINK13"><span
+style='mso-bookmark:OLE_LINK14'>Tested on Nokia E60 </span></a>with Nokia LD-1W
+GPS module</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Developed and tested with Nokia Prototype SDK 3.0 / 4.0 for
+Java(TM) ME. </p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span></p>
+
+<p class=MsoNormal>--------------------------------------------------------------------------------</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>ADDITIONAL DOCUMENTATION</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>MIDP: Location API Developer's Guide.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>--------------------------------------------------------------------------------</p>
+
+<p class=MsoNormal>EVALUATE THIS RESOURCE</p>
+
+<p class=MsoNormal>Please spare a moment to help us improve documentation
+quality and recognize the</p>
+
+<p class=MsoNormal>examples you find most valuable, by <a
+href="http://www.forum.nokia.com/main/1%2C%2C90%2C00.html?surveyId=f7e8ad78-7898-4053-ab83-74c147923866/MIDP_Location_API_Example_Tourist_Route_v1_0.zip">rating
+this resource</a>.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

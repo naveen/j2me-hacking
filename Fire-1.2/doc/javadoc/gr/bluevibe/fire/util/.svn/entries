@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="7"
+   url="https://fire-j2me.svn.sourceforge.net/svnroot/fire-j2me/fire-j2me/doc/gr/bluevibe/fire/util"
+   last-author="padeler"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="dir"
+   name=""
+   committed-rev="7"/>
+<entry
+   checksum="192fe21dc19f82ca2e83de0cc79811ae"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="CommandListener.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="8bddd2c3b253c78467c2e454de6613ae"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="ComponentListener.html"
+   committed-rev="7"/>
+<entry
+   checksum="d3a4910dd5465a75cf70264ffce8698e"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="FString.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="4ee6af5a99b9c2a0f795d43b1f0c4ef6"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="FireIO.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="ba4994e6fa1f9f1194f4384e84b8f097"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="Lang.html"
+   committed-rev="7"/>
+<entry
+   kind="dir"
+   name="class-use"/>
+<entry
+   checksum="141dee0af54bbff72319fce5847620ed"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="package-frame.html"
+   committed-rev="7"/>
+<entry
+   checksum="8d571503f47d40fee347ac7ea7ffe60a"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="package-summary.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="24c39e03d56b51fe74595aaff0417e21"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="package-tree.html"
+   committed-rev="7"/>
+<entry
+   checksum="0db85f89e21cb3e7267355faf1d3ecaf"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="package-use.html"
+   kind="file"
+   committed-rev="7"/>
+</wc-entries>

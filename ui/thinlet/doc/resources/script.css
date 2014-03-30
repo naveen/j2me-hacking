@@ -1,0 +1,78 @@
+body, input, th, td { font-size: 11px; font-family: Verdana; }
+a { color: #316ac4; }
+a:link, a:visited, a:active { text-decoration: none; }
+a:hover { text-decoration: underline; }
+th, td { vertical-align: top; }
+acronym { border-bottom-width: 0px; cursor: help; }
+fieldset { border: 1px solid #ccc; padding: 4px; padding-top: 0px; margin-top: 4px; }
+legend { font-weight: bold; color: #666; }
+
+body.body { background-color: #999; margin: 0px; padding: 0px; text-align: center;
+	word-wrap: break-word; }
+div.content { width: 745px; margin: 0 auto 0 auto; text-align: left;
+	background-color: #fff; height: 100%; }
+div.text { float: left; width: 560px; overflow: hidden; }
+div.textcontent { padding: 4px; }
+.index { margin: 4px; border: 1px solid #999; padding: 1px; float: right; }
+.result { background-color: #fff; border: 1px solid #999; padding: 4px; margin: 0px; text-align: left; }
+	
+.sidebar { float: right; width: 184px; height: 100%;
+	border-left: 1px solid #ccc; background-color: #eee; }
+.package { overflow: auto; }
+.prepackage { padding-bottom: 4px; border-bottom: 1px solid #ccc; }
+.currentpackage { padding-top: 4px; padding-bottom: 4px; background-color: #fff; }
+.propackage { padding-top: 4px; border-top: 1px solid #ccc; }
+.frametitle { margin-left: 4px; font-size: 13px; font-weight: bold; }
+.frametype{ margin-left: 4px; font-weight: bold; color: #333; padding-top: 4px; }
+.frameclass { margin-left: 4px; padding-left: 4px; }
+.deprecatedclass { text-decoration: line-through; margin-left: 4px; padding-left: 4px; }
+
+h1 { font-size: 15px; margin: 2px; }
+h2 { font-size: 13px; margin: 2px; }
+
+.tabbar { display: block; border-bottom: 1px solid #999;
+	margin: 0px; margin-top: 8px; margin-bottom: 6px; padding-bottom: 3px; padding-left: 4px; }
+.tab, .tabhov, .tabsel { display: inline; border: 1px solid #999;
+	padding: 4px; margin: 1px; text-decoration: none; color: #000;
+	-moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px; }
+.tab, .tabhov { padding-bottom: 3px; cursor: pointer; }
+.tab { background: #eee; }
+.tabhov { background: #ddd; text-decoration: underline; }
+.tabsel { background: #fff; border-bottom-width: 0px;
+	font-weight: bold; color: #333; cursor: default; }
+.pg { display: none; } .pgsel {}
+.hidden { display: none; }
+.inline { display: inline; }
+
+.classtree { padding: 4px; border: 1px solid #ccc; }
+.classnode { padding-left: 16px; }
+.classcode { padding-top: 6px; padding-bottom: 6px; }
+
+.description {}
+
+.package { border-collapse: collapse; }
+.package th { font-weight: bold; color: #666; text-align: left; padding-right: 4px; }
+
+.code { text-indent: -32px; padding-left: 32px; }
+.code i { font-style: normal; font-weight: bold; color: #7f0055; }
+.comment { padding-left: 16px; }
+
+/* item */
+.item, .hoveritem { padding-top: 3px; padding-bottom: 3px; border: 1px solid #fff;  }
+.hoveritem { background: #eee; border-color: #ccc; }
+.item .detail { display: none; }
+.hoveritem .detail { display: inline; }
+
+table.detail { border-collapse: collapse; }
+table.detail th { font-weight: bold; color: #666; text-align: right; padding-right: 4px; white-space: nowrap; }
+
+/* hierarchy */
+.infieldset { padding-top: 4px; }
+.node { padding-left: 16px; }
+
+/* use */
+.usepkg { padding-top: 4px; padding-bottom: 4px; border-bottom: 1px solid #ddd; }
+.usepkgtitle { font-weight: bold; color: #333; }
+.usetype { padding-top: 4px; padding-left: 8px; }
+.usetypetitle { font-weight: bold; color: #666; }
+.uselink, .usetext { padding-left: 8px; }

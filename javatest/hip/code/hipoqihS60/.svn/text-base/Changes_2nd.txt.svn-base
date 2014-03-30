@@ -1,0 +1,6 @@
+Version 0.4.4
+	- FIXED: Added web request to erase last position at disconnection.
+	
+Version 0.4.5
+	- FIXED: Splash screen disappears after 5 seconds or when any key is pressed
+	- NEW FEATURE: Menu options to zoom the map in and out

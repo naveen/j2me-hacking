@@ -1,0 +1,8 @@
+MIDlet-1: SiRFstudioDemo, , SiRFstudioDemo
+MIDlet-Jar-Size: 215463
+MIDlet-Jar-URL: SirfStudioDemoBT.jar
+MIDlet-Name: SirfStudioDemo
+MIDlet-Vendor: SiRF
+MIDlet-Version: 1.1.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

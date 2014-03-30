@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="95"
+   name=""
+   committed-date="2007-07-20T17:28:39.912809Z"
+   url="http://hipoqih.googlecode.com/svn/trunk/hipoqihS60/src/com/hipoqih/plugin/s60_3rd/gps"
+   last-author="xcanvic"
+   kind="dir"
+   uuid="d01ceb20-942c-0410-b683-cd95dc0ac709"
+   repos="http://hipoqih.googlecode.com/svn"
+   revision="97"/>
+<entry
+   committed-rev="95"
+   name="ConfigurationProvider.java"
+   text-time="2007-08-22T22:13:24.000000Z"
+   committed-date="2007-07-20T17:28:39.912809Z"
+   checksum="96aa874006543bf43d7792042aa40ce9"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:24.000000Z"/>
+<entry
+   committed-rev="73"
+   name="ProviderStatusListener.java"
+   text-time="2007-08-22T22:13:24.000000Z"
+   committed-date="2007-07-10T18:46:02.636005Z"
+   checksum="1b793acfc94c38bbb109b6bf7739fb8a"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:24.000000Z"/>
+<entry
+   committed-rev="73"
+   name="HipoqihData.java"
+   text-time="2007-08-22T22:13:24.000000Z"
+   committed-date="2007-07-10T18:46:02.636005Z"
+   checksum="e9b9372aaac06a8084a27a71ee090569"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:24.000000Z"/>
+</wc-entries>

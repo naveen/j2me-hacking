@@ -1,0 +1,9 @@
+MIDlet-Name: Tourist Route
+MIDlet-Version: 0.1
+MIDlet-Vendor: Forum Nokia
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: TouristRoute.jar
+MIDlet-Jar-Size: 32108
+MIDlet-1: Tourist Route, , com.nokia.example.location.tourist.TouristMIDlet
+

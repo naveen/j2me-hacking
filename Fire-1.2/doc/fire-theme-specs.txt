@@ -1,0 +1,35 @@
+Theme image is a 50x17 png
+
+top rectangle (0,0)-(50,16) is the logo displayed on the top border of each panel.
+
+row 16: is the background gradient.
+
+For each color if the alpha value is FF then it is not shown.
+
+In row17 each pixes controls a different color in the theme:
+
+1: bgcolor --> default color
+2: label color
+3: scroll color
+4: link color
+5: selected link color
+6: selected link bg color
+7: rouler prim
+8: rouler sec
+9: scroll ruller prim
+10: scroll ruller sec
+11: scroll ruller third.
+
+12: show bg image(if(val==0xFF000000) showBgImage = false)
+13: show grad. (if(val==0xFF000000) showGrad = false)
+14: filled row color
+15: secondary filled row color
+16: Border Color
+17: Pointer Color
+18: secontary pointer Color
+19: Tooltip fg color
+20: Tooltip bg color
+
+21-34: RFU.
+
+35-50: The top and bottom border gradient.

@@ -1,0 +1,9 @@
+MIDlet-Version: 1.0
+MIDlet-Name: DemoMIDlet
+MIDlet-Description: non bluetooth version for use with J9
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: SiRF Technology, Inc.
+MIDlet-1: APIDemoMidlet,,APIDemoMidlet
+MIDlet-Jar-URL: DemoMIDlet.jar
+MIDlet-Jar-Size: 435443

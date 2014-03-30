@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="19"
+   name=""
+   committed-date="2006-08-02T05:24:54.713975Z"
+   url="http://byblos.googlecode.com/svn/trunk/nbproject"
+   last-author="gavin.emploi"
+   kind="dir"
+   uuid="55214601-da19-0410-95b5-973ce13c9e12"
+   repos="http://byblos.googlecode.com/svn"
+   revision="42"/>
+<entry
+   committed-rev="2"
+   name="project.xml"
+   text-time="2007-09-04T15:35:46.000000Z"
+   committed-date="2006-07-31T11:38:58.913207Z"
+   checksum="e9fd3d394288a7f3e2548963e444f416"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:45.000000Z"/>
+<entry
+   committed-rev="2"
+   name="genfiles.properties"
+   text-time="2007-09-04T15:35:46.000000Z"
+   committed-date="2006-07-31T11:38:58.913207Z"
+   checksum="13591597c3f84962dbafbab943ea60f0"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:45.000000Z"/>
+<entry
+   committed-rev="2"
+   name="build-impl.xml"
+   text-time="2007-09-04T15:35:46.000000Z"
+   committed-date="2006-07-31T11:38:58.913207Z"
+   checksum="2201580b741971326d73fa5cfe46a990"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:46.000000Z"/>
+</wc-entries>

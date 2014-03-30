@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!--
+
+	MIDP Build Script
+
+	Copyright (c) 2007 Mary Jane Soft - Marlon J. Manrique
+	
+	http://mjs.darkgreenmedia.com
+	http://marlonj.darkgreenmedia.com
+
+	This library is free software; you can redistribute it and/or
+	modify it under the terms of the GNU Lesser General Public
+	License as published by the Free Software Foundation; either
+	version 2.1 of the License, or (at your option) any later version.
+
+	This library is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+	Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General
+	Public License along with this library; if not, write to the
+	Free Software Foundation, Inc., 59 Temple Place, Suite 330,
+	Boston, MA  02111-1307  USA
+	
+	Use build.properties file to set options for this library.
+
+	$Id: build.xml 227 2007-06-05 07:57:30Z marlonj $
+
+-->
+
+<!-- Build Script -->
+
+<project name="J2ME Project" default="build" basedir=".">
+
+	<!-- use antenna to create J2ME library -->
+	<taskdef resource="antenna.properties" />
+
+	<!-- load library properties -->
+	<property file="build.properties"/>
+
+	<!-- set Wireless Toolkit home -->
+	<property name="wtk.home" value="${wtk_home}" />
+
+	<!-- set especial J2ME properties  -->
+	<property name="wtk.midp.version" value="2.0" />
+	<property name="wtk.cldc.version" value="1.0" />
+	<tstamp />
+
+	<!-- Build -->
+	<target name="build">
+
+		<mkdir dir="classes" />
+
+		<!-- Compile the sources -->
+		<wtkbuild srcdir="src" destdir="classes" preverify="false" 
+			classpath="${external_libraries}" />
+		
+	</target>
+
+	<!-- Make Distribution Files -->
+	<target name="dist" depends="build">
+	
+		<mkdir dir="bin" />
+	
+		<!-- create jad file, the package needs the jad file -->
+		<wtkjad 	jadfile="bin/${product_file}.jad" 
+					jarfile="bin/${product_file}.jar" 
+					name="${product_name}" 
+					vendor="${product_vendor}" 
+					version="${product_version}">
+					<midlet name="${product_name}" class="${product_midlet}"/>
+		</wtkjad>		
+
+		<!-- Create the file -->
+		<wtkpackage jarfile="bin/${product_file}.jar" jadfile="bin/${product_file}.jad" 
+			obfuscate="false" preverify="true" >
+			<fileset dir="classes" />
+			<fileset dir="res" />
+			
+			<libclasspath>
+				<fileset file="${external_libraries}" />
+			</libclasspath>			
+		</wtkpackage>
+
+	</target>
+
+	<!-- Run MIDlet -->
+	<target name="run" depends="dist">
+		<wtkrun jadfile="bin/${product_file}.jad" />
+	</target>
+
+	<!-- Generate the JavaDoc for the library -->
+	<target name="javadoc">
+
+		<!-- Create the destination directory -->
+		<mkdir dir="docs/javadoc" />
+
+		<!-- Create the JavaDoc files -->
+		<javadoc destdir="docs/javadoc"
+			sourcepath="src" 
+			packagenames="*" 
+			author="true" 
+			version="true" 
+			use="true" 
+			private="true"
+			windowtitle="${product_name} ${product_version}" >
+			<doctitle><![CDATA[<h1>${product_name}</h1>]]></doctitle>
+			<bottom><![CDATA[<i>Copyright &#169; ${product_vendor}</i>]]></bottom>
+		</javadoc>
+
+	</target>
+
+	<!-- Remove all created files to clean the build process -->
+	<target name="clean">
+		<delete failonerror="false" dir="docs" />
+		<delete failonerror="false" dir="bin" />
+		<delete failonerror="false" dir="classes" />
+	</target>
+	
+</project>

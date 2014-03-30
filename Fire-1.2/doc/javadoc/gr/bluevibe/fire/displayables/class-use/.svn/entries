@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="7"
+   url="https://fire-j2me.svn.sourceforge.net/svnroot/fire-j2me/fire-j2me/doc/gr/bluevibe/fire/displayables/class-use"
+   last-author="padeler"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name=""
+   kind="dir"
+   committed-rev="7"/>
+<entry
+   checksum="e90bf00ec388120bacb5af43784e7644"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="FireScreen.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="28521758743eff34c9155903c7aa7f4a"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="LoadScreen.html"
+   committed-rev="7"/>
+<entry
+   checksum="f4736edfb52a9da0e58a8e604331e0c7"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="SplashScreen.html"
+   kind="file"
+   committed-rev="7"/>
+</wc-entries>

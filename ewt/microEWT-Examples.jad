@@ -1,0 +1,9 @@
+MIDlet-1: TestMidlet,,de.esoco.ewt.example.TestMidlet
+MIDlet-2: EWTSet,,de.esoco.ewt.example.EWTSet
+MIDlet-Jar-Size: 161654
+MIDlet-Jar-URL: microEWT-Examples.jar
+MIDlet-Name: microEWT-Examples Midlet Suite
+MIDlet-Vendor: Midlet Suite Vendor
+MIDlet-Version: 1.0.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

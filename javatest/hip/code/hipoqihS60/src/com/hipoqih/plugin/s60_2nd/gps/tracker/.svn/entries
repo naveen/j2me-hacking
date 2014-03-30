@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="68"
+   name=""
+   committed-date="2007-06-14T10:38:52.330686Z"
+   url="http://hipoqih.googlecode.com/svn/trunk/hipoqihS60/src/com/hipoqih/plugin/s60_2nd/gps/tracker"
+   last-author="xcanvic"
+   kind="dir"
+   uuid="d01ceb20-942c-0410-b683-cd95dc0ac709"
+   repos="http://hipoqih.googlecode.com/svn"
+   revision="97"/>
+<entry
+   committed-rev="68"
+   name="Tracker.class"
+   text-time="2007-08-22T22:13:28.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="724cd7ce0737b9b40569b5c8887ee249"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:27.000000Z"/>
+<entry
+   committed-rev="68"
+   name="FileIOListener.class"
+   text-time="2007-08-22T22:13:28.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="d0b2c7d22f3674cc90439be9e331fab1"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:27.000000Z"/>
+<entry
+   committed-rev="68"
+   name="Write.java"
+   text-time="2007-08-22T22:13:28.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="690a1e8e1dce52c71d222bd4161e94db"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:27.000000Z"/>
+<entry
+   committed-rev="68"
+   name="Tracker.java"
+   text-time="2007-08-22T22:13:28.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="e12bdddef7100a318675545c1776c066"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:28.000000Z"/>
+<entry
+   committed-rev="68"
+   name="FileIOListener.java"
+   text-time="2007-08-22T22:13:28.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="2e19d2ef9d3f8f59e59831a2ceaf41bb"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:28.000000Z"/>
+<entry
+   committed-rev="68"
+   name="Write.class"
+   text-time="2007-08-22T22:13:28.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="57eb50ea675e4fc25d7902e8059f1a9a"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:28.000000Z"/>
+<entry
+   committed-rev="68"
+   name="package.html"
+   text-time="2007-08-22T22:13:28.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="a1cc425c07fb4cb9769c28f47a36351d"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:28.000000Z"/>
+</wc-entries>

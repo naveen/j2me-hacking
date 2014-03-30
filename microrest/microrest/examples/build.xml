@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!--
+
+	Build Script
+
+	Copyright (c) 2007 Mary Jane Soft - Marlon J. Manrique
+	
+	http://mjs.darkgreenmedia.com
+	http://marlonj.darkgreenmedia.com
+
+	This library is free software; you can redistribute it and/or
+	modify it under the terms of the GNU Lesser General Public
+	License as published by the Free Software Foundation; either
+	version 2.1 of the License, or (at your option) any later version.
+
+	This library is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+	Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General
+	Public License along with this library; if not, write to the
+	Free Software Foundation, Inc., 59 Temple Place, Suite 330,
+	Boston, MA  02111-1307  USA
+
+	$Id:build.xml 111 2006-06-22 13:36:40 -0500 (jue, 22 jun 2006) marlonj $
+	
+-->
+
+<!--
+
+	Use build.properties file to set options for this library.
+
+-->
+
+<!-- Build Script -->
+
+<project name="MIDP Examples" default="build" basedir=".">
+
+	<!-- use antenna to create J2ME library -->
+	<taskdef resource="antenna.properties" />
+
+	<!-- set Wireless Toolkit home -->
+	<property name="wtk.home" value="${wtk_home}" />
+
+	<!-- set especial J2ME properties  -->
+	<property name="wtk.midp.version" value="1.0" />
+	<property name="wtk.cldc.version" value="1.0" />
+
+	<tstamp />
+	<!-- Remove all created files to clean the build process -->
+	<target name="clean">
+		<ant dir="flickr" target="clean" />
+		<ant dir="yahoo" target="clean" />	</target>
+
+</project>

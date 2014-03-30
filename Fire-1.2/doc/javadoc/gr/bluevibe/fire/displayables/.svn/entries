@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   revision="7"
+   url="https://fire-j2me.svn.sourceforge.net/svnroot/fire-j2me/fire-j2me/doc/gr/bluevibe/fire/displayables"
+   last-author="padeler"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="dir"
+   name=""
+   committed-rev="7"/>
+<entry
+   checksum="e56d09f8b32710e1de45cc0af252d9c5"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:18.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="FireScreen.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="8eceb7c35b5faf6bef9580079c5eb11e"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:18.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="LoadScreen.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="ca3872c2ebfda07ece55887abe61c6d1"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:18.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="SplashScreen.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   kind="dir"
+   name="class-use"/>
+<entry
+   checksum="86cd84ecb8d19abe5ba91d047686d607"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   name="package-frame.html"
+   kind="file"
+   committed-rev="7"/>
+<entry
+   checksum="27e8b197dcb8a7ff04310d54700cd54e"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="package-summary.html"
+   committed-rev="7"/>
+<entry
+   checksum="36e85ebfafbbf9ca828327cd1052a78e"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="package-tree.html"
+   committed-rev="7"/>
+<entry
+   checksum="fd64cee63bd15726129bd8d7f4548477"
+   last-author="padeler"
+   text-time="2007-02-12T16:02:17.000000Z"
+   committed-date="2007-02-12T16:54:40.103000Z"
+   kind="file"
+   name="package-use.html"
+   committed-rev="7"/>
+</wc-entries>

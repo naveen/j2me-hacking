@@ -1,0 +1,12 @@
+
+This javadoc contains markup that allows to highlight the changes
+made to the specification between versions 1.0 and 1.0.1.
+
+By copying the stylesheet_revisions.css to stylesheet.css, the change
+highlighting is enabled. The changes are shown in red colour.
+
+By copying the stylesheet_normal.css to stylesheet.css, the change
+highlighting is disabled.
+
+By default, the change highlighting is disabled.
+

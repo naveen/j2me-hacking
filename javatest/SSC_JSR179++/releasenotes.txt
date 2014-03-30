@@ -1,0 +1,102 @@
+Description:
+====================
+
+The SiRFStudio JSR179++ library for J2ME enables application development for device based on J2ME(MIDP 2.0 and CLDC1.1). This library is available in two versions as:
+
+- JSR82 compliance, Support Bluetooth discovery.
+- JSR82 incompliance.
+
+JSR179++ library is compliance to standard JSR179 specification.
+
+
+Features:
+=========
+ - Location with criteria (in asynchronous and synchronous methods)
+ - NMEA sentences
+ - Proximity Notifier
+ - GPS Satellite updates
+ - Configuration APIs (AGPS server IP and Port, Serial connection string)
+ - Debug logs 
+
+
+This folder includes all key component needed for application development using JSR179++.
+
+1) Both BT and Non-Bt version of JSR179++ library named as SiRFstudio.jar.
+2) SiRFstudio sample application that demonstrates some of the features of  
+JSR179.
+3) Sample application source code for the reference to the user of JSR179++  
+APIs.
+4) SiRFstudio JSR179++ API documentation (in HTML format).
+5) Standard JSR179 API documentation (in HTML format).
+
+
+
+Directory Layout
+===================
+
+1) BT Version
+
+	•	Lib: BT version of jsr179++ library named as SiRFstudio.jar
+	•	SiRFstudioDemo: Sample application 
+	•	SiRFstudioDemoSrc: sample application source code.
+
+2) Non-Bt Version
+	•	Lib: Non BT version of jsr179++ library named as  
+SiRFstudio.jar
+	•	SiRFstudioDemo: Sample application 
+	•	SiRFstudioDemoSrc: sample application source code.
+
+3) SiRFstudioAPI_javadoc: SiRFstudio JSR179++ API documentation.
+
+4) JSR179_Javadoc: Standard JSR179 API documentation.
+
+
+
+Build Overview
+=============
+
+Basic Requirements:
+
+- Sun Java Wireless Toolkit 2.3
+
+
+Creating JSR179++ sample application project (Bluetooth Version).
+
+
+- Launch WTK KToolbar; Select the "Sun java WTK -> KToolbar" program item.
+
+- Select the "File ->New project" menu item from the KToolbar. New project dialog will appears.
+
+- Enter project and midlet class name.Midlet name should be "SiRFstudioDemo" for SiRFstudio sample application and project name can be any.
+
+-Click OK
+
+- “Setting for project” screen appears.
+
+- Select the API selection tab and than select CLDC1.1 and Bluetooth Obex (when Bluetooth version of JSR179++ library) from the configuration and Additional API section.
+
+-Click OK
+
+
+- Now the project directory  has been created with the project name under the WTK directory.
+
+- Open the project directory and copy the SiRFstudio.jar into the lib directory and copy the sample source code into the SRC folder.
+
+
+
+Building the SiRFstudio Sample Application(Bluetooth Version)
+
+- select the “Project ->Build” menu item. Alternatively, you may select the Build icon from the KToolbar screen. When the build completes, the project build status is shown on the Ktoolbar screen.
+
+
+- Select Run icon or alternatively select the “Project ->Run” menu item to run the application on the WTK simulator.
+
+Creating jar file for target device 
+
+- Select the “Project ->package->Create package" menu item.
+- It will create the jar file into the bin directory of the project.
+
+
+
+
+

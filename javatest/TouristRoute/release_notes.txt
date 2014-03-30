@@ -1,0 +1,144 @@
+MIDP: Location API Example - Tourist Route
+---------------------------
+
+This MIDP application demonstrates the usage of the Location API by showing
+the current device coordinates. The MIDlet also shows how to store the current
+coordinates associated with location information to the device's landmark store.
+
+The Location API is supported from S60 3rd Edition and Series 40 3rd Edition
+(some devices) onwards.
+
+
+--------------------------------------------------------------------------------
+
+PREREQUISITES
+
+MIDP 2.0 basics
+
+--------------------------------------------------------------------------------
+
+IMPORTANT FILES/CLASSES
+
+classes:
+src\com\nokia\example\location\tourist\TouristMIDlet.java
+
+src\com\nokia\example\location\tourist\model\ConfigurationProvider.java
+src\com\nokia\example\location\tourist\model\ControlPoints.java
+src\com\nokia\example\location\tourist\model\ProviderStatusListener.java
+src\com\nokia\example\location\tourist\model\TouristData.java
+
+src\com\nokia\example\location\tourist\util\CompassUI.java
+src\com\nokia\example\location\tourist\util\LandmarkEditorUI.java
+src\com\nokia\example\location\tourist\util\MessageUI.java
+src\com\nokia\example\location\tourist\util\PitchRollUI.java
+src\com\nokia\example\location\tourist\util\ProviderQueryUI.java
+src\com\nokia\example\location\tourist\util\TouristUI.java
+
+ANT build script:
+build.xml
+
+--------------------------------------------------------------------------------
+
+KNOWN ISSUES:
+
+- The MIDlet contains features such as compass (orientation) that are not currently 
+supported by Nokia devices. Such features are not visible in the MIDlet at 
+run time unless a device supports them.
+    
+--------------------------------------------------------------------------------
+
+RUNNING THE EXAMPLE
+
+There are three main views in the application:
+
+"Route View" - The application will show this after a successful startup.
+            From this view the user can monitor the current device coordinates
+            and switch to the Landmark Editor view.
+
+"Landmark Editor" - This view enables the user to store the current coordinates
+            associated with user-defined location information to the device's
+            landmark store. From this view the user can switch back to the Route View
+            or to the Landmark List.
+
+"Landmark List" - This view lists all landmarks stored with this application.
+            The user can either remove the selected landmark or update its
+            information. The update command will switch the user to the Landmark Editor view.
+
+In addition, the MIDlet contains two views ("Compass View" and "Pitch and Roll View")
+that are shown only if the device or emulator supports orientation.
+
+
+The following are quick instructions on how to run the example from command line
+and from Eclipse IDE:
+
+1) Running the MIDlet from command line: 
+----------------------------------------
+The MIDlet can be run in Prototype SDK 3.0 / 4.0 from the command line:
+
+[Prototype SDK install path]\bin\emulator.exe -Xdescriptor:[workspace path]\TouristRoute\TouristRoute.jad
+
+2) Running the MIDlet from Eclipse IDE:
+--------------------------------------
+- Import the TouristRoute project into your Eclipse workspace.
+- Open the TouristRoute project in the Package Explorer.
+- Create a run configuration:
+	1. Right-click TouristRoute.jad
+	2. Select "Run As | Run..."
+	3. Select Nokia SDK Plug-in from the Configurations and click the new button.
+	4. Select the SDK (e.g., Prototype_4_0_S60_MIDP_Emulator)
+	5. Click the run button. 
+
+On the next runs you can reuse the existing run configuration. For more detailed
+instructions, see the SDK's User's Guide.
+     
+--------------------------------------------------------------------------------
+
+BUILD & INSTALLATION INSTRUCTIONS
+
+Configuring Eclipse and Carbide.j 1.0
+-------------------------------------
+The preferred method is to use Eclipse with Carbide.j 1.0 installed
+as a plug-in. Choose "File | Import | Existing Project into Workspace" from
+the top menu of Eclipse and browse to the TouristRoute folder. This will add
+the project to your Workspace.
+
+You may need to configure the Build Path in "Project | Properties |
+Java Build Path | Libraries" to point to the right location of Nokia 
+Prototype SDK 4.0. In addition, ensure that Carbide.j 1.0 is configured
+to use Prototype SDK 3.0 / 4.0 from the "Emulators | Configure Emulator..." 
+menu.
+
+
+Compiling using Ant
+-------------------
+A build.xml file is included that uses the ANT tasks included
+in Carbide.j 1.0. It may be necessary to modify the location of 
+Carbide.j and the desired emulator/device from the build.xml file.
+
+For instructions on how to configure build.xml, see
+Carbide.j 1.0 User's Guide and Apache Ant 1.6.5 Manual.
+    
+--------------------------------------------------------------------------------
+
+COMPATIBILITY
+   
+S60 3rd Edition
+Series 40 3rd Edition (some devices)
+
+Tested on Nokia E60 with Nokia LD-1W GPS module
+
+Developed and tested with Nokia Prototype SDK 3.0 / 4.0 for Java(TM) ME. 
+    
+--------------------------------------------------------------------------------
+
+ADDITIONAL DOCUMENTATION
+
+MIDP: Location API Developer's Guide.
+
+--------------------------------------------------------------------------------
+
+EVALUATE THIS RESOURCE
+
+Please spare a moment to help us improve documentation quality and recognize the
+examples you find most valuable, by rating this resource at
+http://www.forum.nokia.com/main/1%2C%2C90%2C00.html?surveyId=f7e8ad78-7898-4053-ab83-74c147923866/MIDP_Location_API_Example_Tourist_Route_v1_0.zip

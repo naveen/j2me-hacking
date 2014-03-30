@@ -1,0 +1,12 @@
+MIDlet-1: HelloWorld, , com.java4ever.apime.demo.helloworld.HelloWorld
+MIDlet-2: FontDemo, , com.java4ever.apime.demo.fontdemo.FontDemo
+MIDlet-3: KeyboardDemo, , com.java4ever.apime.demo.keyboarddemo.KeyboardDemo
+MIDlet-4: SkinDemo, , com.java4ever.apime.demo.skindemo.SkinDemo
+MIDlet-Icon: /icon.png
+MIDlet-Jar-Size: 62246
+MIDlet-Jar-URL: ApimeDemo.jar
+MIDlet-Name: ApimeDemo
+MIDlet-Vendor: Java4Ever
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-1.0

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="95"
+   name=""
+   committed-date="2007-07-20T17:28:39.912809Z"
+   url="http://hipoqih.googlecode.com/svn/trunk/hipoqihS60/src/com"
+   last-author="xcanvic"
+   kind="dir"
+   uuid="d01ceb20-942c-0410-b683-cd95dc0ac709"
+   repos="http://hipoqih.googlecode.com/svn"
+   revision="97"/>
+<entry
+   name="hipoqih"
+   kind="dir"/>
+</wc-entries>

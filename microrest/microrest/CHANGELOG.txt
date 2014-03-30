@@ -1,0 +1,57 @@
+MicroRest - Log
+---------------
+
+- (2007,06,05)
+
+  New constructor added RestRequest(serviceURL,method)
+  
+  com.j2medeveloper.util.UrlUtils class used to encode names and values of the
+  request. This is LGPL code.
+
+  POST method implemented, some methods changed to use the urlencoded to send
+  the data via POST and GET.
+
+- (2007,06,04)
+  
+  POST method must be implemented to release the 0.1 version.
+  
+  YahooSearch example implemented using RestResultListener.
+  
+  Add error report to FlickrEchoMIDlet example.
+  
+  Get all the results of the xml file supported through getResults method.
+  
+  Better exception support, RestException added and method throws exception 
+  added.
+  
+  Some methods removed to have a better Java behaviour.
+  Send and sendAndWait methods used.
+  
+  To receive an unattended call to the rest service a RestResultListener must 
+  be implemented and registered, this allow receive the result of the request 
+  in a asynchronous way.
+  
+  CHANGES.txt, CHANGELOG.txt, README.txt, TODO.txt files added.
+
+- (2007,06,03)
+  
+  The MicroRest library is a set of classes to perform calls to a REST services
+  allowing an easy way to create REST request, perform the call and get the XML
+  result of the call.
+  
+  The RestRequest provide the methods to create a REST request using the GET or 
+  POST method, creating the query urls or adding the parameters to the POST 
+  request.
+  
+  The XML response is parse using the KXML parser, and grabbing the response in
+  a tree struct representing each tag with the name, text and attributes, also 
+  provide a xpath implementation to grab the text() and @attribute values for a 
+  element provide like a path "/rsp/@stat", also provide access to the elements
+  of the response.
+  
+  The library is a J2ME version of the MRest library created to access REST 
+  services in Mobile Processing.  
+  
+  Initial import.
+  
+$Id: CHANGELOG.txt 228 2007-06-05 19:39:32Z marlonj $

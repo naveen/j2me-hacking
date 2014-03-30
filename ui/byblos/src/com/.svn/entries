@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="42"
+   name=""
+   committed-date="2007-07-15T05:03:26.919667Z"
+   url="http://byblos.googlecode.com/svn/trunk/src/com"
+   last-author="gavin.emploi"
+   kind="dir"
+   uuid="55214601-da19-0410-95b5-973ce13c9e12"
+   repos="http://byblos.googlecode.com/svn"
+   revision="42"/>
+<entry
+   name="raverun"
+   kind="dir"/>
+</wc-entries>

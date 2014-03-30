@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="69"
+   name=""
+   committed-date="2007-06-14T17:36:13.718822Z"
+   url="http://hipoqih.googlecode.com/svn/trunk/hipoqihS60/src/com/hipoqih/plugin/s60_2nd/gps"
+   last-author="xcanvic"
+   kind="dir"
+   uuid="d01ceb20-942c-0410-b683-cd95dc0ac709"
+   repos="http://hipoqih.googlecode.com/svn"
+   revision="97"/>
+<entry
+   committed-rev="69"
+   name="BluetoothConnectionToGPS.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T17:36:13.718822Z"
+   checksum="46586ac21906fe7b7d19d069abaa2120"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:26.000000Z"/>
+<entry
+   committed-rev="68"
+   name="NMEAObject.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="87bf9e956c059cdb353edb09dc48cfb8"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:26.000000Z"/>
+<entry
+   committed-rev="69"
+   name="ReceiveAndSendMessages.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T17:36:13.718822Z"
+   checksum="b4fb4f4b9f324054a0c8cdd216e9f0e2"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:26.000000Z"/>
+<entry
+   committed-rev="68"
+   name="NMEAMessages.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="c7a8340a0dfda2baddbffed7898a5df9"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:26.000000Z"/>
+<entry
+   committed-rev="68"
+   name="Coordinates.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="5311acf6cfb362968e0fa9fd36b0a2c2"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:27.000000Z"/>
+<entry
+   name="tracker"
+   kind="dir"/>
+<entry
+   committed-rev="68"
+   name="package.html"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="1beeb38a2d03d589215e5055773425fc"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:29.000000Z"/>
+<entry
+   committed-rev="68"
+   name="SaveAndLoad.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="63f583d4bcdf6104f44232dd131800a7"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:25.000000Z"/>
+<entry
+   committed-rev="68"
+   name="BluetoothConnection.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="ac7c255a87aafcf32e71aea11f99f030"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:26.000000Z"/>
+<entry
+   committed-rev="68"
+   name="Debug.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="9ba14d3941fd9178491d891f03e84c17"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:26.000000Z"/>
+<entry
+   committed-rev="68"
+   name="Satellite.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="5276ab35bcb6d3248aa766cc09ddbe10"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:26.000000Z"/>
+<entry
+   committed-rev="68"
+   name="GPS.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="b5fe6b7976c74444220cf7e56251f3b8"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:27.000000Z"/>
+<entry
+   committed-rev="68"
+   name="MessageListener.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="effac91d82d29bf3b2a88d555a008ae1"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:27.000000Z"/>
+<entry
+   committed-rev="68"
+   name="SIRFMessages.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-06-14T10:38:52.330686Z"
+   checksum="1baf777175b2de72ff78f8052f4ee8ef"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:29.000000Z"/>
+<entry
+   name="utilities"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="42"
+   name=""
+   committed-date="2007-07-15T05:03:26.919667Z"
+   url="http://byblos.googlecode.com/svn/trunk"
+   last-author="gavin.emploi"
+   kind="dir"
+   uuid="55214601-da19-0410-95b5-973ce13c9e12"
+   repos="http://byblos.googlecode.com/svn"
+   revision="42"/>
+<entry
+   committed-rev="2"
+   name=".classpath"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-07-31T11:38:58.913207Z"
+   checksum="a88d4c7482af9ab2af1c3c98b636b760"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:45.000000Z"/>
+<entry
+   name="dist"
+   kind="dir"/>
+<entry
+   committed-rev="2"
+   name=".project"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-07-31T11:38:58.913207Z"
+   checksum="b6062011f78dad8f8b937cd2f28c624d"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:45.000000Z"/>
+<entry
+   name="nbproject"
+   kind="dir"/>
+<entry
+   name="src"
+   kind="dir"/>
+<entry
+   committed-rev="2"
+   name="build.xml"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-07-31T11:38:58.913207Z"
+   checksum="30e8c068bfbaa6de1140b3bd4a3aa8b1"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+</wc-entries>

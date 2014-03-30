@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="95"
+   name=""
+   committed-date="2007-07-20T17:28:39.912809Z"
+   url="http://hipoqih.googlecode.com/svn/trunk/hipoqihS60/src/com/hipoqih/plugin"
+   last-author="xcanvic"
+   kind="dir"
+   uuid="d01ceb20-942c-0410-b683-cd95dc0ac709"
+   repos="http://hipoqih.googlecode.com/svn"
+   revision="97"/>
+<entry
+   committed-rev="89"
+   name="MIDletExiter.java"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-07-18T17:03:50.751275Z"
+   checksum="4863519707fa90aa5246c6aab51f01d3"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:24.000000Z"/>
+<entry
+   name="s60_3rd"
+   kind="dir"/>
+<entry
+   committed-rev="73"
+   name="Tools.java"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-07-10T18:46:02.636005Z"
+   checksum="96684173e0ac5c3726e123fca6dbb1bb"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:24.000000Z"/>
+<entry
+   committed-rev="95"
+   name="State.java"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-07-20T17:28:39.912809Z"
+   checksum="ee1d5c40eef7fba110f0070450ae601b"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:24.000000Z"/>
+<entry
+   committed-rev="73"
+   name="RecordTypes.java"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-07-10T18:46:02.636005Z"
+   checksum="14c397122873e8ddc03ce69ccd77b407"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:25.000000Z"/>
+<entry
+   committed-rev="73"
+   name="HipoAlert.java"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-07-10T18:46:02.636005Z"
+   checksum="fc386c88a01e11679211d7a00db7c1e6"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:25.000000Z"/>
+<entry
+   committed-rev="94"
+   name="SplashScreen.java"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-07-19T17:09:00.849925Z"
+   checksum="6d5fce182d458e8fef049ee6fb3d0a16"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:25.000000Z"/>
+<entry
+   name="s60_2nd"
+   kind="dir"/>
+<entry
+   name="Web"
+   kind="dir"/>
+<entry
+   name="UI"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,16 @@
+MicroRest
+---------
+
+Version 0.1 (2007,06,05)
+------------------------
+- Initial Release
+- Rest Library for J2ME
+- GET and POST method supported
+- URL encoded use 
+- Minimal xPath to retrieve results
+- ResultListener to perform asynchronous calls 
+- Minimal Flickr and Yahoo examples
+- Contains kXML2 version 2.3.0 under BSD license
+- Contains com.j2medeveloper.util.UrlUtils under LGPL license
+
+$Id: CHANGES.txt 230 2007-06-05 19:59:58Z marlonj $

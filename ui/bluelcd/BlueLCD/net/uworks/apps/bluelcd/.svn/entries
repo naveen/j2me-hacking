@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2006-08-05T00:06:32.097464Z"
+   url="http://bluelcd.googlecode.com/svn/trunk/BlueLCD/net/uworks/apps/bluelcd"
+   last-author="peprio"
+   kind="dir"
+   uuid="5d666fbc-391a-0410-a214-2303235c0b0f"
+   repos="http://bluelcd.googlecode.com/svn"
+   revision="6"/>
+<entry
+   committed-rev="2"
+   name="AppSettings.java"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="806e758b30b3371c6e800f589172c738"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:39.000000Z"/>
+<entry
+   committed-rev="2"
+   name="OnScreenMenu.java"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="75d55bcbf48d9f240c047e512ee60b0c"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:39.000000Z"/>
+<entry
+   committed-rev="2"
+   name="LCDScreen.java"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="80751e88ecbdad04a156f6543c2b946c"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:39.000000Z"/>
+<entry
+   committed-rev="2"
+   name="CharTable.java"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="a53e02c2c45bff147251d88c9eea3809"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:39.000000Z"/>
+<entry
+   committed-rev="2"
+   name="ConfigValues.java"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="ac43c66d49950f6cba33843db0658d60"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:39.000000Z"/>
+<entry
+   committed-rev="2"
+   name="AboutScreen.java"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="ce3a51765fd111061e9157b2051500e0"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:39.000000Z"/>
+<entry
+   committed-rev="2"
+   name="BlueLCD.java"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="58f67075a9e637191f5a83e9ccaea5ca"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:39.000000Z"/>
+<entry
+   committed-rev="2"
+   name="RFCommServer.java"
+   text-time="2007-09-04T17:31:39.000000Z"
+   committed-date="2006-08-05T00:06:32.097464Z"
+   checksum="7b416ccf8274a3a4d535f71e257b9928"
+   last-author="peprio"
+   kind="file"
+   prop-time="2007-09-04T17:31:39.000000Z"/>
+</wc-entries>

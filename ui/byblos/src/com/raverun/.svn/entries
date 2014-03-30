@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="42"
+   name=""
+   committed-date="2007-07-15T05:03:26.919667Z"
+   url="http://byblos.googlecode.com/svn/trunk/src/com/raverun"
+   last-author="gavin.emploi"
+   kind="dir"
+   uuid="55214601-da19-0410-95b5-973ce13c9e12"
+   repos="http://byblos.googlecode.com/svn"
+   revision="42"/>
+<entry
+   committed-rev="41"
+   name="UiController.java"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2007-07-09T03:35:18.136523Z"
+   checksum="d3058a951e957255187cf7059ea21966"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+<entry
+   committed-rev="34"
+   name="MainMidlet.java"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-08-18T09:16:03.527069Z"
+   checksum="df015681a5ebf0f189494d8f7dbb76b4"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+<entry
+   committed-rev="42"
+   name="ListElement.java"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2007-07-15T05:03:26.919667Z"
+   checksum="b40f319ea3c5e9b02d49c41e18c9789a"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+<entry
+   committed-rev="42"
+   name="Shared.java"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2007-07-15T05:03:26.919667Z"
+   checksum="8ef0452a13a4c6f4300eaf44f26c789e"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+<entry
+   committed-rev="29"
+   name="Navigable.java"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2006-08-18T08:24:04.257841Z"
+   checksum="b8fc75bb6d6d4358e52d692aa3a70063"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+<entry
+   committed-rev="42"
+   name="CommonUtils.java"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2007-07-15T05:03:26.919667Z"
+   checksum="609b041efbe563e5f1c3976a7c30ab45"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+<entry
+   committed-rev="42"
+   name="Animator.java"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2007-07-15T05:03:26.919667Z"
+   checksum="8a1ed88a468e8c1a2bf1cb3cde0a8359"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+<entry
+   committed-rev="42"
+   name="MidletHandler.java"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2007-07-15T05:03:26.919667Z"
+   checksum="3e69296e19c75c2d9478b80beba3a8c3"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+<entry
+   committed-rev="42"
+   name="Animatable.java"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2007-07-15T05:03:26.919667Z"
+   checksum="dc8831bcd3d4c52561ce9da0298d82e1"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+<entry
+   committed-rev="42"
+   name="ListContainer.java"
+   text-time="2007-09-04T15:35:47.000000Z"
+   committed-date="2007-07-15T05:03:26.919667Z"
+   checksum="fab8d36d395f51afca87f330aaa59b49"
+   last-author="gavin.emploi"
+   kind="file"
+   prop-time="2007-09-04T15:35:47.000000Z"/>
+</wc-entries>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="91"
+   name=""
+   committed-date="2007-07-18T19:23:14.514756Z"
+   url="http://hipoqih.googlecode.com/svn/trunk/hipoqihS60/src/com/hipoqih/plugin/s60_2nd"
+   last-author="xcanvic"
+   kind="dir"
+   uuid="d01ceb20-942c-0410-b683-cd95dc0ac709"
+   repos="http://hipoqih.googlecode.com/svn"
+   revision="97"/>
+<entry
+   committed-rev="91"
+   name="HipoqihMIDlet.java"
+   text-time="2007-08-22T22:13:29.000000Z"
+   committed-date="2007-07-18T19:23:14.514756Z"
+   checksum="caf9e6047fac583afd486dc95dd4f201"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:25.000000Z"/>
+<entry
+   name="gps"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="95"
+   name=""
+   committed-date="2007-07-20T17:28:39.912809Z"
+   url="http://hipoqih.googlecode.com/svn/trunk/hipoqihS60/src"
+   last-author="xcanvic"
+   kind="dir"
+   uuid="d01ceb20-942c-0410-b683-cd95dc0ac709"
+   repos="http://hipoqih.googlecode.com/svn"
+   prop-time="2007-08-22T22:13:30.000000Z"
+   revision="97"/>
+<entry
+   name="com"
+   kind="dir"/>
+<entry
+   committed-rev="73"
+   name="gpl-3.0.txt"
+   text-time="2007-08-22T22:13:30.000000Z"
+   committed-date="2007-07-10T18:46:02.636005Z"
+   checksum="d32239bcb673463ab874e80d47fae504"
+   last-author="xcanvic"
+   kind="file"
+   prop-time="2007-08-22T22:13:30.000000Z"/>
+</wc-entries>
